@@ -1,0 +1,45 @@
+2020-12-14 13:49:15,444 INFO    MainThread:1992 [wandb_setup.py:_flush():70] setting env: {}
+2020-12-14 13:49:15,444 INFO    MainThread:1992 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2020-12-14 13:49:15,444 INFO    MainThread:1992 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-14 13:49:15,444 INFO    MainThread:1992 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-14 13:49:15,445 INFO    MainThread:1992 [wandb_init.py:_log_setup():303] Logging user logs to C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\logs\debug.log
+2020-12-14 13:49:15,445 INFO    MainThread:1992 [wandb_init.py:_log_setup():304] Logging internal logs to C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\logs\debug-internal.log
+2020-12-14 13:49:16,911 INFO    MainThread:1992 [wandb_run.py:_console_start():1237] atexit reg
+2020-12-14 13:49:16,912 INFO    MainThread:1992 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2020-12-14 13:49:16,912 INFO    MainThread:1992 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2020-12-14 13:49:16,912 INFO    MainThread:1992 [wandb_run.py:_redirect():1151] Redirects installed.
+2020-12-14 13:49:39,817 INFO    MainThread:1992 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 0
+2020-12-14 13:49:39,818 INFO    MainThread:1992 [wandb_run.py:_restore():1179] restore
+2020-12-14 13:49:39,820 INFO    MainThread:1992 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "4b83decd0d3844f8902c2ab242b35402"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+      other_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 1677
+      total_bytes: 1677
+    }
+  }
+}
+
+2020-12-14 13:49:41,821 INFO    MainThread:1992 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "ea74cd9074964622ae259c2e7e72e24a"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+      other_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 75837
+      total_bytes: 75837
+    }
+  }
+}
+
+2020-12-14 13:49:42,923 INFO    MainThread:1992 [wandb_run.py:_show_files():1536] logging synced files
+2020-12-14 13:49:42,924 INFO    MainThread:1992 [internal.py:handle_exit():138] Internal process exited

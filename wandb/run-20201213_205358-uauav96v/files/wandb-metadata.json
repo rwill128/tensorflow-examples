@@ -1,0 +1,18 @@
+{
+    "os": "Windows-10-10.0.18362-SP0",
+    "python": "3.8.6",
+    "heartbeatAt": "2020-12-14T01:54:00.073414",
+    "startedAt": "2020-12-14T01:53:58.697181",
+    "docker": null,
+    "gpu": "GeForce GTX 1070",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "main.py",
+    "program": "C:/Users/Rick/PycharmProjects/tensorflow-examples/main.py",
+    "host": "DESKTOP-AF6SMS3",
+    "username": "Rick",
+    "executable": "C:\\Users\\Rick\\anaconda3\\envs\\tensorflow-examples\\python.exe"
+}

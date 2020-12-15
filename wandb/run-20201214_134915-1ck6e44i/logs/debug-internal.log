@@ -1,0 +1,191 @@
+2020-12-14 13:49:16,467 INFO    MainThread:21268 [internal.py:wandb_internal():63] W&B internal server running at pid: 21268
+2020-12-14 13:49:16,469 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: check_version
+2020-12-14 13:49:16,469 INFO    WriterThread:21268 [datastore.py:open_for_write():76] open: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\run-1ck6e44i.wandb
+2020-12-14 13:49:16,470 DEBUG   SenderThread:21268 [sender.py:send():90] send: header
+2020-12-14 13:49:16,470 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:16,476 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: check_version
+2020-12-14 13:49:16,478 DEBUG   Thread-8  :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2020-12-14 13:49:16,553 DEBUG   Thread-8  :21268 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-14 13:49:16,581 DEBUG   SenderThread:21268 [sender.py:send():90] send: run
+2020-12-14 13:49:16,606 DEBUG   SenderThread:21268 [util.py:is_cygwin_git():315] Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'The system cannot find the file specified', None, 2, None)
+2020-12-14 13:49:16,607 DEBUG   SenderThread:21268 [git.py:repo():30] git repository is invalid
+2020-12-14 13:49:16,613 DEBUG   SenderThread:21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-14 13:49:16,768 DEBUG   SenderThread:21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-14 13:49:16,774 INFO    SenderThread:21268 [dir_watcher.py:__init__():165] watching files in: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files
+2020-12-14 13:49:16,775 INFO    SenderThread:21268 [sender.py:_start_run_threads():487] run started: 1ck6e44i with start time 1607971755
+2020-12-14 13:49:16,775 DEBUG   SenderThread:21268 [sender.py:send():90] send: summary
+2020-12-14 13:49:16,775 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: run_start
+2020-12-14 13:49:16,775 INFO    SenderThread:21268 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-14 13:49:16,793 DEBUG   HandlerThread:21268 [git.py:repo():30] git repository is invalid
+2020-12-14 13:49:16,907 DEBUG   SenderThread:21268 [sender.py:send():90] send: files
+2020-12-14 13:49:16,908 INFO    SenderThread:21268 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2020-12-14 13:49:16,908 INFO    SenderThread:21268 [sender.py:_save_file():568] saving file code\textile_classification.py with policy now
+2020-12-14 13:49:16,911 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: status
+2020-12-14 13:49:16,911 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:16,911 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: status
+2020-12-14 13:49:16,914 DEBUG   SenderThread:21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-14 13:49:16,920 DEBUG   Thread-15 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-14 13:49:16,925 DEBUG   Thread-16 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-14 13:49:17,025 DEBUG   SenderThread:21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-14 13:49:17,033 DEBUG   Thread-15 :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-14 13:49:17,037 DEBUG   Thread-15 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-14 13:49:17,141 DEBUG   Thread-16 :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-14 13:49:17,146 DEBUG   Thread-16 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-14 13:49:17,358 DEBUG   Thread-15 :21268 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rwill128/tensorflow-examples/1ck6e44i/wandb-metadata.json?Expires=1608058157&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=rKC%2BIuZxPdkls0hV0r8DEgN%2FKNldf1rqzSWrGArmBv0%2F%2B17c%2FPEnHVh%2BZvfGFyIYgPqr%2FJ%2FZwzBIvGdXP8QfAw2qYLl8bf%2Fl1BuXel5lk4%2BHZzLi5nTOPF7YiTIUS2%2Bo7CDvtmqCeGfgDQmocLsqVUIYOguPN0AFAVoPxwrT4pGe%2BHkRB3bbPSqyCPA55AW3qW2VxrglaxAPtSoHu0yNliVN0rUdwVf7Lg7pfdBFy7uY5d3lloWEH1iAGjuu9B01Gy4mVEd404fd5S5xudkQCw%2BbKoFG5g%2Bu6enCGuDoXsNKO4YiD%2BLdGsU4knCrSfrsmxD%2FoNLP%2BB6HGu%2BzHuev1g%3D%3D HTTP/1.1" 200 0
+2020-12-14 13:49:17,360 INFO    Thread-15 :21268 [upload_job.py:push():131] Uploaded file C:\Users\Rick\AppData\Local\Temp\tmp1tb57mi0wandb\2twhkz7b-wandb-metadata.json
+2020-12-14 13:49:17,470 DEBUG   Thread-16 :21268 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rwill128/tensorflow-examples/1ck6e44i/code/textile_classification.py?Expires=1608058157&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=qHXHtHknhcMsSHZucsJV5xHCIy8OonuvrTUNK8TzfKwYQ5hRC1Sxm9OKCaQYUmFWD8G8rs5o%2B9%2FR9vP3R%2BRBUDW3xDSUrt8oIsRZJFyb58r4YYiz6ZkNf41BlUqAzHINvHcGp2alBbvfb5i8WZSqF4hntl21X5LHbWmBIjqJ3hkEVP4Y4rrF5usQVrYmXgeFrxu34c%2B0zy%2BlV6K4iVT%2BUMOpF4eSWlEzWbqydTitY9G7bD1QzqT56FSoJ5%2F86ff%2BFA%2BMhnr40EHnogW167i57FPoJEHloeJSEu1XUdIAJIKrhsbGTFf8eZJeUm7OhfI%2BG6j0ckP%2B%2F97mff1j%2FIligw%3D%3D HTTP/1.1" 200 0
+2020-12-14 13:49:17,471 INFO    Thread-16 :21268 [upload_job.py:push():131] Uploaded file C:\Users\Rick\AppData\Local\Temp\tmp1tb57mi0wandb\3ma4xg5k-code/textile_classification.py
+2020-12-14 13:49:17,776 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\requirements.txt
+2020-12-14 13:49:17,776 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:17,777 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\wandb-metadata.json
+2020-12-14 13:49:17,777 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\code
+2020-12-14 13:49:18,775 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:19,776 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:20,280 DEBUG   SenderThread:21268 [sender.py:send():90] send: stats
+2020-12-14 13:49:20,284 DEBUG   Thread-9  :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-14 13:49:20,542 DEBUG   Thread-9  :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/rwill128/tensorflow-examples/1ck6e44i/file_stream HTTP/1.1" 200 None
+2020-12-14 13:49:20,776 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:21,777 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:22,776 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:23,281 DEBUG   Thread-9  :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/rwill128/tensorflow-examples/1ck6e44i/file_stream HTTP/1.1" 200 None
+2020-12-14 13:49:23,777 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:24,777 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:24,865 DEBUG   SenderThread:21268 [sender.py:send():90] send: stats
+2020-12-14 13:49:25,778 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:26,780 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:27,280 DEBUG   Thread-9  :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/rwill128/tensorflow-examples/1ck6e44i/file_stream HTTP/1.1" 200 None
+2020-12-14 13:49:27,779 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:28,779 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:29,298 DEBUG   Thread-9  :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/rwill128/tensorflow-examples/1ck6e44i/file_stream HTTP/1.1" 200 None
+2020-12-14 13:49:29,452 DEBUG   SenderThread:21268 [sender.py:send():90] send: stats
+2020-12-14 13:49:29,780 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:30,781 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:31,363 DEBUG   Thread-9  :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/rwill128/tensorflow-examples/1ck6e44i/file_stream HTTP/1.1" 200 None
+2020-12-14 13:49:31,782 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:32,027 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: status
+2020-12-14 13:49:32,027 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:32,027 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: status
+2020-12-14 13:49:32,030 DEBUG   SenderThread:21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-14 13:49:32,145 DEBUG   SenderThread:21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-14 13:49:32,781 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:33,783 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:34,045 DEBUG   SenderThread:21268 [sender.py:send():90] send: stats
+2020-12-14 13:49:34,160 DEBUG   Thread-9  :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/rwill128/tensorflow-examples/1ck6e44i/file_stream HTTP/1.1" 200 None
+2020-12-14 13:49:34,783 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:35,782 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:36,784 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:37,357 DEBUG   Thread-9  :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/rwill128/tensorflow-examples/1ck6e44i/file_stream HTTP/1.1" 200 None
+2020-12-14 13:49:37,784 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:38,634 DEBUG   SenderThread:21268 [sender.py:send():90] send: stats
+2020-12-14 13:49:38,784 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:39,473 DEBUG   Thread-9  :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/rwill128/tensorflow-examples/1ck6e44i/file_stream HTTP/1.1" 200 None
+2020-12-14 13:49:39,786 INFO    Thread-12 :21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:39,818 DEBUG   SenderThread:21268 [sender.py:send():90] send: exit
+2020-12-14 13:49:39,818 INFO    SenderThread:21268 [sender.py:send_exit():168] handling exit code: 0
+2020-12-14 13:49:39,819 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: poll_exit
+2020-12-14 13:49:39,819 INFO    SenderThread:21268 [sender.py:send_exit():176] send defer
+2020-12-14 13:49:39,819 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:39,819 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: poll_exit
+2020-12-14 13:49:39,820 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: defer
+2020-12-14 13:49:39,820 INFO    HandlerThread:21268 [handler.py:handle_request_defer():69] handle defer: 0
+2020-12-14 13:49:39,820 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:39,820 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: defer
+2020-12-14 13:49:39,820 INFO    SenderThread:21268 [sender.py:send_request_defer():185] handle sender defer: 0
+2020-12-14 13:49:39,820 INFO    SenderThread:21268 [sender.py:send_request_defer():221] send defer: 1
+2020-12-14 13:49:39,820 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: defer
+2020-12-14 13:49:39,820 INFO    HandlerThread:21268 [handler.py:handle_request_defer():69] handle defer: 1
+2020-12-14 13:49:39,901 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:39,901 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: defer
+2020-12-14 13:49:39,901 INFO    SenderThread:21268 [sender.py:send_request_defer():185] handle sender defer: 1
+2020-12-14 13:49:39,902 INFO    SenderThread:21268 [sender.py:send_request_defer():221] send defer: 2
+2020-12-14 13:49:39,902 DEBUG   SenderThread:21268 [sender.py:send():90] send: stats
+2020-12-14 13:49:39,903 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: defer
+2020-12-14 13:49:39,903 INFO    HandlerThread:21268 [handler.py:handle_request_defer():69] handle defer: 2
+2020-12-14 13:49:39,903 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:39,903 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: defer
+2020-12-14 13:49:39,903 INFO    SenderThread:21268 [sender.py:send_request_defer():185] handle sender defer: 2
+2020-12-14 13:49:39,903 INFO    SenderThread:21268 [sender.py:send_request_defer():221] send defer: 3
+2020-12-14 13:49:39,904 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: defer
+2020-12-14 13:49:39,904 INFO    HandlerThread:21268 [handler.py:handle_request_defer():69] handle defer: 3
+2020-12-14 13:49:39,904 DEBUG   SenderThread:21268 [sender.py:send():90] send: summary
+2020-12-14 13:49:39,904 INFO    SenderThread:21268 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-14 13:49:39,905 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:39,905 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: defer
+2020-12-14 13:49:39,905 INFO    SenderThread:21268 [sender.py:send_request_defer():185] handle sender defer: 3
+2020-12-14 13:49:39,905 INFO    SenderThread:21268 [sender.py:send_request_defer():221] send defer: 4
+2020-12-14 13:49:39,905 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: defer
+2020-12-14 13:49:39,905 INFO    HandlerThread:21268 [handler.py:handle_request_defer():69] handle defer: 4
+2020-12-14 13:49:39,905 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:39,905 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: defer
+2020-12-14 13:49:39,905 INFO    SenderThread:21268 [sender.py:send_request_defer():185] handle sender defer: 4
+2020-12-14 13:49:39,905 INFO    SenderThread:21268 [dir_watcher.py:finish():279] shutting down directory watcher
+2020-12-14 13:49:40,786 INFO    SenderThread:21268 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:40,787 INFO    SenderThread:21268 [dir_watcher.py:finish():309] scan: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files
+2020-12-14 13:49:40,787 INFO    SenderThread:21268 [dir_watcher.py:finish():315] scan save: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\config.yaml config.yaml
+2020-12-14 13:49:40,787 INFO    SenderThread:21268 [dir_watcher.py:finish():315] scan save: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log output.log
+2020-12-14 13:49:40,788 INFO    SenderThread:21268 [dir_watcher.py:finish():315] scan save: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\requirements.txt requirements.txt
+2020-12-14 13:49:40,791 INFO    SenderThread:21268 [dir_watcher.py:finish():315] scan save: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\wandb-metadata.json wandb-metadata.json
+2020-12-14 13:49:40,791 INFO    SenderThread:21268 [dir_watcher.py:finish():315] scan save: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\wandb-summary.json wandb-summary.json
+2020-12-14 13:49:40,791 DEBUG   Thread-17 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-14 13:49:40,794 DEBUG   Thread-18 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-14 13:49:40,797 DEBUG   Thread-19 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-14 13:49:40,797 INFO    SenderThread:21268 [dir_watcher.py:finish():315] scan save: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\code\textile_classification.py code\textile_classification.py
+2020-12-14 13:49:40,797 INFO    SenderThread:21268 [sender.py:send_request_defer():221] send defer: 5
+2020-12-14 13:49:40,798 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: defer
+2020-12-14 13:49:40,798 INFO    HandlerThread:21268 [handler.py:handle_request_defer():69] handle defer: 5
+2020-12-14 13:49:40,800 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:40,800 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: defer
+2020-12-14 13:49:40,800 INFO    SenderThread:21268 [sender.py:send_request_defer():185] handle sender defer: 5
+2020-12-14 13:49:40,800 INFO    SenderThread:21268 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-14 13:49:40,800 INFO    SenderThread:21268 [sender.py:send_request_defer():221] send defer: 6
+2020-12-14 13:49:40,801 DEBUG   Thread-20 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-14 13:49:40,801 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: defer
+2020-12-14 13:49:40,801 INFO    HandlerThread:21268 [handler.py:handle_request_defer():69] handle defer: 6
+2020-12-14 13:49:40,801 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:40,802 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: defer
+2020-12-14 13:49:40,802 INFO    SenderThread:21268 [sender.py:send_request_defer():185] handle sender defer: 6
+2020-12-14 13:49:40,894 DEBUG   Thread-9  :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/rwill128/tensorflow-examples/1ck6e44i/file_stream HTTP/1.1" 200 None
+2020-12-14 13:49:40,915 DEBUG   Thread-20 :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-14 13:49:40,917 DEBUG   Thread-18 :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-14 13:49:40,921 DEBUG   Thread-20 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-14 13:49:40,926 DEBUG   Thread-19 :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-14 13:49:40,930 DEBUG   Thread-18 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-14 13:49:40,934 DEBUG   Thread-17 :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-14 13:49:40,935 DEBUG   Thread-19 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-14 13:49:40,943 DEBUG   Thread-17 :21268 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-14 13:49:40,965 DEBUG   Thread-9  :21268 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/rwill128/tensorflow-examples/1ck6e44i/file_stream HTTP/1.1" 200 None
+2020-12-14 13:49:40,967 INFO    SenderThread:21268 [sender.py:send_request_defer():221] send defer: 7
+2020-12-14 13:49:40,967 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: defer
+2020-12-14 13:49:40,967 INFO    HandlerThread:21268 [handler.py:handle_request_defer():69] handle defer: 7
+2020-12-14 13:49:40,967 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:40,968 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: defer
+2020-12-14 13:49:40,968 INFO    SenderThread:21268 [sender.py:send_request_defer():185] handle sender defer: 7
+2020-12-14 13:49:40,968 INFO    SenderThread:21268 [sender.py:send_request_defer():221] send defer: 8
+2020-12-14 13:49:40,968 DEBUG   SenderThread:21268 [sender.py:send():90] send: final
+2020-12-14 13:49:40,969 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: defer
+2020-12-14 13:49:40,969 INFO    HandlerThread:21268 [handler.py:handle_request_defer():69] handle defer: 8
+2020-12-14 13:49:40,969 DEBUG   SenderThread:21268 [sender.py:send():90] send: footer
+2020-12-14 13:49:40,969 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:40,969 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: defer
+2020-12-14 13:49:40,969 INFO    SenderThread:21268 [sender.py:send_request_defer():185] handle sender defer: 8
+2020-12-14 13:49:41,188 DEBUG   Thread-20 :21268 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rwill128/tensorflow-examples/1ck6e44i/wandb-summary.json?Expires=1608058181&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=xvaCC7p5a%2FpezKd9Pi5mv1uaBVdotE7V9WbYSGDzKNOuFFIs%2BA66dIrgxe1dAfw7aoUXACAHJxXDxV8zI%2Frj8Y6Qf5ZuzDDBftaVVbZjmWeRBP%2Byda%2F054Xvg1teOeiu6IIIXBVvYX3IIDKfsQfraU%2ByhmrPhN%2Fggi8d3kt6TQ4jT8CbULvxUyi19H94VzX5kxcgVJLmEIzfYMdj%2B97Df093GcukJN%2F0Rx3kmvfXjmE0IkSqWHui8eiXi573LL7yrJffffVDYOfiMu8o3AIGRw5VuL3io6Vjobv9xTFGySZc568tg2FVqmScwX%2FXXjvWUeS8QcpgMUoMxgOlKZh%2BjQ%3D%3D HTTP/1.1" 200 0
+2020-12-14 13:49:41,189 INFO    Thread-20 :21268 [upload_job.py:push():131] Uploaded file C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\wandb-summary.json
+2020-12-14 13:49:41,220 DEBUG   Thread-19 :21268 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rwill128/tensorflow-examples/1ck6e44i/requirements.txt?Expires=1608058181&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=uReHex8BMuigaPliaXL8NfOoXxaYcAM3soS%2FdUA8jDuUR10xx6rXWWwcjq7FhmlH32p0Nur8zpn%2BQFWCOlr0rXrxMWRYcKczSblhOEeCKbvWbk6P44YeQaxl9wY3h3A9ztQCFOs15h5SN0A0sAVpFrVwug1lRRYk9uuZ6%2B2OScYZaG%2B8D3cJ15T6iCMoWuwHWD6cyZh%2B5CQ8tzpFZyd9dt%2F55%2BOAdldjT9xz7WJqPOISBdxV0c9kfvGCAjURTmPQPaJb37pRCTzkhjn33XdPZMTap%2B4kPyUBxt1cz6mCcTAOh%2BzYeNwLJiRvs7wdEian9H6bpsa0EtoGgi32QL6Png%3D%3D HTTP/1.1" 200 0
+2020-12-14 13:49:41,221 DEBUG   Thread-17 :21268 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rwill128/tensorflow-examples/1ck6e44i/config.yaml?Expires=1608058181&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=0FWlhnRh1h7el%2Fo45B7V5njAeoucYph3AgFL9wLuU%2FjnHw88zyAeybQ1wWE67kcrAwew5gJ7dOmr188yIgkP2K%2B8atjyQ5R4JWxLb%2FjDcyif6mKzws6%2FO%2FpWn8M1%2FOP%2FygwapfbX0xKXiSe4AYvn2ipjv5fVJcFd1m7Ov8osPxpbE5ZKtl%2FvQCLxQzpf9B0If4c8BR2apjutzM5ct2Vlp8baygU%2Fw7oMCOuvIxaE3NxGXFAULmK5msSARLfA1TnPs6iZTwbaVfaoYnb5EdtPDy2oJd2GNBvWrFxYEck3B%2F7aGRvRnlbeZ8LGygPnT%2BTba19Eu4ae1PKUAQZ8SHfjXA%3D%3D HTTP/1.1" 200 0
+2020-12-14 13:49:41,222 INFO    Thread-19 :21268 [upload_job.py:push():131] Uploaded file C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\requirements.txt
+2020-12-14 13:49:41,224 INFO    Thread-17 :21268 [upload_job.py:push():131] Uploaded file C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\config.yaml
+2020-12-14 13:49:41,316 DEBUG   Thread-18 :21268 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rwill128/tensorflow-examples/1ck6e44i/output.log?Expires=1608058181&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=QM3oalT0SVw1B1%2BK5FvYtOIcGDdCvCOA8jwOpnqh1cN7HNN1g9y%2F4EEA5rxFH%2Bd1J94vbMvcSJ1d8EPyFp%2FxadX6fIzTFITweYFjOlE7Iukc1zadj9K%2B3vKDpb%2FB%2F%2FUmKHW3vD4JQHrFLD6OquMAHz8uqaMnikekdMtvtmFQipWQoJ43s8U5aw2nBc5FZwmg75BMbbmF5lDPlrpZf5uNXlHMRKkxGmoG2jrxlLm2o5RGzuZMVfUiPkVVzLtviRtcyJSrRwagZgq8V%2BL1e4DLCG7IcqJSsz%2F4WRvsyXDH4ZLxhAc%2Bp585Lr8yfferHPYTgkicblhEnhe2z%2FNLQ3gfkg%3D%3D HTTP/1.1" 200 0
+2020-12-14 13:49:41,318 INFO    Thread-18 :21268 [upload_job.py:push():131] Uploaded file C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\files\output.log
+2020-12-14 13:49:41,820 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: poll_exit
+2020-12-14 13:49:41,821 DEBUG   SenderThread:21268 [sender.py:send():90] send: request
+2020-12-14 13:49:41,821 DEBUG   SenderThread:21268 [sender.py:send_request():99] send_request: poll_exit
+2020-12-14 13:49:41,821 INFO    SenderThread:21268 [file_pusher.py:join():174] waiting for file pusher
+2020-12-14 13:49:41,822 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: get_summary
+2020-12-14 13:49:41,823 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: sampled_history
+2020-12-14 13:49:41,823 DEBUG   HandlerThread:21268 [handler.py:handle_request():55] handle_request: shutdown
+2020-12-14 13:49:41,824 INFO    HandlerThread:21268 [handler.py:finish():271] shutting down handler
+2020-12-14 13:49:41,969 INFO    WriterThread:21268 [datastore.py:close():257] close: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201214_134915-1ck6e44i\run-1ck6e44i.wandb
+2020-12-14 13:49:42,821 INFO    SenderThread:21268 [sender.py:finish():642] shutting down sender
+2020-12-14 13:49:42,821 INFO    SenderThread:21268 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-14 13:49:42,821 INFO    SenderThread:21268 [file_pusher.py:join():174] waiting for file pusher
+2020-12-14 13:49:42,822 INFO    MainThread:21268 [internal.py:handle_exit():138] Internal process exited

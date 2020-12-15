@@ -1,0 +1,81 @@
+2020-12-13 20:53:01,520 INFO    MainThread:17844 [internal.py:wandb_internal():63] W&B internal server running at pid: 17844
+2020-12-13 20:53:01,522 INFO    WriterThread:17844 [datastore.py:open_for_write():76] open: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201213_205300-230nyyzp\run-230nyyzp.wandb
+2020-12-13 20:53:01,522 DEBUG   HandlerThread:17844 [handler.py:handle_request():55] handle_request: check_version
+2020-12-13 20:53:01,524 DEBUG   SenderThread:17844 [sender.py:send():90] send: header
+2020-12-13 20:53:01,524 DEBUG   SenderThread:17844 [sender.py:send():90] send: request
+2020-12-13 20:53:01,528 DEBUG   SenderThread:17844 [sender.py:send_request():99] send_request: check_version
+2020-12-13 20:53:01,530 DEBUG   Thread-8  :17844 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2020-12-13 20:53:01,598 DEBUG   Thread-8  :17844 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-13 20:53:01,636 DEBUG   SenderThread:17844 [sender.py:send():90] send: run
+2020-12-13 20:53:01,654 DEBUG   SenderThread:17844 [util.py:is_cygwin_git():315] Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'The system cannot find the file specified', None, 2, None)
+2020-12-13 20:53:01,655 DEBUG   SenderThread:17844 [git.py:repo():30] git repository is invalid
+2020-12-13 20:53:01,659 DEBUG   SenderThread:17844 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-13 20:53:01,764 DEBUG   SenderThread:17844 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 404 None
+2020-12-13 20:53:01,765 ERROR   SenderThread:17844 [internal_api.py:execute():133] 404 response executing GraphQL.
+2020-12-13 20:53:01,765 ERROR   SenderThread:17844 [internal_api.py:execute():134] {"errors":[{"message":"entity teamname not found during upsertBucket","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2020-12-13 20:53:02,636 INFO    HandlerThread:17844 [handler.py:finish():271] shutting down handler
+2020-12-13 20:53:02,638 INFO    WriterThread:17844 [datastore.py:close():257] close: C:\Users\Rick\PycharmProjects\tensorflow-examples\wandb\run-20201213_205300-230nyyzp\run-230nyyzp.wandb
+2020-12-13 20:53:02,638 ERROR   MainThread:17844 [internal.py:wandb_internal():129] Thread SenderThread:
+Traceback (most recent call last):
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\old\retry.py", line 96, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\sdk\internal\internal_api.py", line 136, in execute
+    six.reraise(*sys.exc_info())
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\six.py", line 703, in reraise
+    raise value
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\sdk\internal\internal_api.py", line 130, in execute
+    return self.client.execute(*args, **kwargs)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\vendor\gql-0.2.0\gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\vendor\gql-0.2.0\gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\vendor\gql-0.2.0\gql\transport\requests.py", line 39, in execute
+    request.raise_for_status()
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\requests\models.py", line 943, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\apis\normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\sdk\internal\internal_api.py", line 976, in upsert_run
+    response = self.gql(mutation, variable_values=variable_values, **kwargs)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\old\retry.py", line 105, in __call__
+    if not check_retry_fn(e):
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\util.py", line 658, in no_retry_auth
+    raise CommError("Permission denied, ask the project owner to grant you access")
+wandb.errors.error.CommError: Permission denied, ask the project owner to grant you access
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\sdk\internal\internal_util.py", line 33, in run
+    self._run()
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\sdk\internal\internal_util.py", line 60, in _run
+    self._process(record)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\sdk\internal\internal.py", line 233, in _process
+    self._sm.send(record)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\sdk\internal\sender.py", line 92, in send
+    send_handler(record)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\sdk\internal\sender.py", line 379, in send_run
+    self._init_run(run, config_dict)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\sdk\internal\sender.py", line 401, in _init_run
+    server_run, inserted = self._api.upsert_run(
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\apis\normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\six.py", line 702, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\apis\normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\sdk\internal\internal_api.py", line 976, in upsert_run
+    response = self.gql(mutation, variable_values=variable_values, **kwargs)
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\old\retry.py", line 105, in __call__
+    if not check_retry_fn(e):
+  File "C:\Users\Rick\anaconda3\envs\tensorflow-examples\lib\site-packages\wandb\util.py", line 658, in no_retry_auth
+    raise CommError("Permission denied, ask the project owner to grant you access")
+wandb.errors.error.CommError: Permission denied, ask the project owner to grant you access
+2020-12-13 20:53:02,661 DEBUG   raven-sentry.BackgroundWorker:17844 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): o151352.ingest.sentry.io:443
+2020-12-13 20:53:02,855 DEBUG   raven-sentry.BackgroundWorker:17844 [connectionpool.py:_make_request():452] https://o151352.ingest.sentry.io:443 "POST /api/5288891/store/ HTTP/1.1" 200 41
+2020-12-13 20:53:04,659 INFO    MainThread:17844 [internal.py:handle_exit():138] Internal process exited
